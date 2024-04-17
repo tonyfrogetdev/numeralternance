@@ -242,7 +242,13 @@ body {
 }
 
 .btn-primary:is(:hover, :focus) {
-  background-color: var(--rich-black-fogra-29-2);
+  background-image: linear-gradient(
+    to right,
+    white 15%,
+    rgba(251, 0, 0, 0.787) 40%,
+    green
+  );
+  color: var(--rich-black-fogra-29-1);
 }
 
 .flex-btn {
@@ -480,6 +486,33 @@ body {
   z-index: -1;
 }
 
+.modal {
+  display: none; /* Par défaut, la modal est cachée */
+  position: fixed; /* Position fixe pour rester au-dessus du contenu */
+  z-index: 1000; /* Une valeur élevée pour être sûr qu'elle soit au-dessus du reste du contenu */
+  left: 0;
+  top: 0;
+  width: 100%; /* Couvre toute la largeur */
+  height: 100%; /* Couvre toute la hauteur */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  overflow: auto; /* Permet de faire défiler le contenu si nécessaire */
+}
+
+.modal-content {
+  position: absolute; /* Position absolue pour centrer la modal */
+  top: 50%; /* Centrer verticalement */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Décalage de moitié de la largeur et de la hauteur */
+  padding: 20px;
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.close-modal {
+  display: none;
+}
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -973,6 +1006,8 @@ body {
 
   .navbar-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
   }
 
@@ -994,8 +1029,13 @@ body {
   }
 
   .header .btn-outline:is(:hover, :focus) {
-    background-color: var(--go-purple);
-    color: var(--white);
+    background-image: linear-gradient(
+      to right,
+      white 15%,
+      rgba(251, 0, 0, 0.787) 40%,
+      green
+    );
+    color: var(--rich-black-fogra-29-1);
   }
 
   /**

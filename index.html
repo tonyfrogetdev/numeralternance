@@ -29,7 +29,7 @@
     <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/HeroBanner.webp" />
   </head>
 
   <body>
@@ -70,19 +70,20 @@
             <li>
               <a href="#" class="navbar-link" data-nav-link>Contact</a>
             </li>
+            <li>
+              <a
+                href="https://www.numer.tech/project"
+                class="btn-outline"
+                target="_blank"
+                >Lancez votre projet</a
+              >
+            </li>
           </ul>
         </nav>
 
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
-
-        <a
-          href="https://www.numer.tech/project"
-          class="btn-outline"
-          target="_blank"
-          >Lancez votre projet</a
-        >
 
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
@@ -113,13 +114,26 @@
               <div class="btn-group">
                 <a href="#services" class="btn btn-primary">En savoir plus</a>
 
-                <button class="flex-btn">
+                <button class="flex-btn" data-video-id="CsOyeztonG8">
                   <div class="btn-icon">
                     <ion-icon name="play" aria-hidden="true"></ion-icon>
                   </div>
 
                   <span class="span">Vidéo de présentation</span>
                 </button>
+              </div>
+
+              <div id="videoModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-modal">&times;</span>
+                  <iframe
+                    id="youtubeVideo"
+                    width="560"
+                    height="315"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
             </div>
 
@@ -549,9 +563,9 @@
                 <div class="faq-card">
                   <button class="card-action" data-accordion-action>
                     <h3 class="h3 card-title">
-                      04.Tu ne réussiras pas à vivre à Madagascar. Les expatriés
-                      avec des salaires de 4000 euros et plus se plaignent tout
-                      le temps.
+                      04. Tu ne réussiras pas à vivre à Madagascar. Les
+                      expatriés avec des salaires de 4000 euros et plus se
+                      plaignent tout le temps.
                     </h3>
 
                     <div class="action-icon">
@@ -586,8 +600,8 @@
                 <div class="faq-card">
                   <button class="card-action" data-accordion-action>
                     <h3 class="h3 card-title">
-                      05. Nous ne sommes pas encore sûrs. Comment pourrais-tu
-                      nous convaincre, Tony?
+                      05. Nous ne sommes pas sûrs, tu es trop junior Tony.
+                      Comment pourrais-tu nous convaincre, Tony?
                     </h3>
 
                     <div class="action-icon">
@@ -606,12 +620,16 @@
 
                   <div class="card-content">
                     <p>
-                      J'ai conscience de mon niveau technique débutant, mais je
-                      sais aussi que je code tous les jours, vraiment tous les
-                      jours. Il y a 6 mois qui nous séparent d'octobre 2024, je
-                      serai un autre développeur d'ici là, bien plus expérimenté
+                      J'ai conscience que mon niveau technique actuel n'est pas
+                      celui d'un développeur confirmer, mais je sais aussi que
+                      je code tous les jours, vraiment tous les jours. Il y a 6
+                      mois qui nous séparent d'octobre 2024, je serai un autre
+                      développeur d'ici là, bien plus expérimenté
                       qu'actuellement, et je suis content d'avoir le temps de
-                      vous le prouver.
+                      vous le prouver. Un alternant ne pourra jamais être un
+                      confirmé ou senior, justement car il est alternant, pour
+                      ma part je vous assure que je peux être confirmer en
+                      Octobre 2024 du moins sur l'expérience front-end
                     </p>
                   </div>
                 </div>
@@ -633,8 +651,7 @@
             <a href="#" class="logo">Numer</a>
 
             <p class="footer-text">
-              Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore.
+              Votre projet est entre de bonnes mains au sein de Numer.
             </p>
 
             <form action="" class="newsletter-form">

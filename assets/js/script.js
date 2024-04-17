@@ -67,3 +67,31 @@ const toggleAccordion = function () {
 };
 
 addEventOnElem(accordionAction, "click", toggleAccordion);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".flex-btn");
+  const modal = document.querySelector("#videoModal");
+  const closeModalButton = document.querySelector(".close-modal");
+  const iframe = document.querySelector("#youtubeVideo");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const videoId = this.getAttribute("data-video-id");
+      const videoSrc = `https://www.youtube.com/embed/${videoId}`;
+      iframe.src = videoSrc;
+      modal.style.display = "block";
+    });
+  });
+
+  closeModalButton.onclick = () => {
+    modal.style.display = "none";
+    iframe.src = "";
+  };
+
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      iframe.src = "";
+    }
+  };
+});
