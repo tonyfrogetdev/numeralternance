@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numer - Osons ensemble l'audace technologique</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Numer</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Numer</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>À Propos</a>
+            </li>
+
+            <li>
+              <a href="#services" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a
+          href="https://www.numer.tech/project"
+          class="btn-outline"
+          target="_blank"
+          >Lancez votre projet</a
+        >
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle has-before">Bienvennu chez Numer</p>
+
+              <h1 class="h1 hero-title">
+                Votre lendemain technologique, dès aujourd'hui !
+              </h1>
+
+              <p class="hero-text">
+                Découvrez comment notre expertise et notre adaptabilité peuvent
+                propulser votre transformation numérique vers de nouveaux
+                sommets. Ensemble, relevons les défis du futur avec confiance
+                grâce à Numer.
+              </p>
+
+              <div class="btn-group">
+                <a href="#services" class="btn btn-primary">En savoir plus</a>
+
+                <button class="flex-btn">
+                  <div class="btn-icon">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">Vidéo de présentation</span>
+                </button>
+              </div>
+            </div>
+
+            <figure
+              class="hero-banner has-before img-holder"
+              style="--width: 650; --height: 650"
+            >
+              <img
+                src="./assets/images/HeroBanner.webp"
+                width="650"
+                height="650"
+                alt="hero banner"
+                class="img-cover"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="services" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle text-center">-Ce qu'on vous offre-</p>
+
+            <h2 class="h2 section-title text-center">Nos Services</h2>
+
+            <p class="section-text text-center">
+              Quand l'innovation passe des mots aux réalisations
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/service-1.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="UI/UX Creative Design"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Création de Site Web</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adi piscing semper
+                      turpis. Nullam eget luctlie gula and adipiscing elit.
+                    </p>
+
+                    <a
+                      href="https://www.numer.tech/"
+                      class="btn-link"
+                      target="_blank"
+                    >
+                      <span class="span">Read More</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/service-2.png"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="App Development"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Ingénierie Logiciel</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adi piscing semper
+                      turpis. Nullam eget luctlie gula and adipiscing elit.
+                    </p>
+
+                    <a
+                      href="https://www.numer.tech/software-engineering"
+                      class="btn-link"
+                      target="_blank"
+                    >
+                      <span class="span">Lire plus</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/service-3.jpg"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="Professional Content Writer"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Intelligence artificielle</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adi piscing semper
+                      turpis. Nullam eget luctlie gula and adipiscing elit.
+                    </p>
+
+                    <a
+                      href="https://www.numer.tech/artificial-intelligence"
+                      class="btn-link"
+                      target="_blank"
+                    >
+                      <span class="span">Lire plus</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/images/service-4.jpg"
+                      width="140"
+                      height="140"
+                      loading="lazy"
+                      alt="Graphic Design"
+                      class="img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Cloud & Cybersécurité</h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adi piscing semper
+                      turpis. Nullam eget luctlie gula and adipiscing elit.
+                    </p>
+
+                    <a
+                      href="https://www.numer.tech/cloud-cybersecurity"
+                      class="btn-link"
+                      target="_blank"
+                    >
+                      <span class="span">Lire plus</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              href="https://www.numer.tech/project"
+              class="btn btn-primary"
+              target="_blank"
+              >Lancez votre projet</a
+            >
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section features" id="features" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle text-center">
+              -Maintenant, pourquoi me choisir comme alternant ?-
+            </p>
+
+            <h2 class="h2 section-title text-center">
+              Enina raisons de me choisir :
+            </h2>
+
+            <p class="section-text text-center">
+              Il y a pas deux alternants comme moi
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="03">01</data>
+
+                  <h3 class="h3 card-title">Développeur passionné</h3>
+
+                  <p class="card-text">
+                    La motivation et la discipline ne serait rien sans une
+                    réelle passion pour le domaine de l'IT qui grandit en moi
+                    jour après jour
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="04">02</data>
+
+                  <h3 class="h3 card-title">Polyvalent</h3>
+
+                  <p class="card-text">
+                    Au delà de coder, je sais me vendre et vendre, je sais me
+                    motiver mais aussi motiver les autres, les rendre aussi
+                    discipliner que je le suis
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="01">03</data>
+
+                  <h3 class="h3 card-title">Motivé</h3>
+
+                  <p class="card-text">
+                    Prêt à bosser sur toutes les tâches qui permettront
+                    l'élévation de Numer et de l'IT à Madagascar(De Madagascar
+                    tout court)
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="02">04</data>
+
+                  <h3 class="h3 card-title">Discipliné</h3>
+
+                  <p class="card-text">
+                    De part mon ancienne profession de Coach sportif, j'ai une
+                    discipline de fer, sérieux dans le travail, sérieux sur les
+                    horaires
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="05">05</data>
+
+                  <h3 class="h3 card-title">Capitaine dans l'âme</h3>
+
+                  <p class="card-text">
+                    j'ai été capitaine d'équipe de foot, basket, préparateur
+                    physique d'équipe amateur de Boxe, maître de guilde dans des
+                    jeux vidéos, capitaine d'équipe esport amateur. Un don pour
+                    mener les troupes
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="features-card">
+                  <data class="card-number" value="06">06</data>
+
+                  <h3 class="h3 card-title">Un individu de qualité</h3>
+
+                  <p class="card-text">
+                    Panafricain dans l'âme, je suis un individu de qualité à
+                    ajouter à la population malagasy
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #FAQ
+      -->
+
+        <section class="section faq" aria-label="frequently asked questions">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Ai-je répondu à vos questions?</h2>
+
+              <a
+                href="https://www.linkedin.com/in/tonyfrogetdev/"
+                class="btn btn-primary"
+                >Je suis votre alternant</a
+              >
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      01. Que peux-tu nous apporter concrètement ?
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      Une réalisation moderne de landing pages, sites vitrines
+                      et sites full-stack pour des clients, de A à Z, avec
+                      React.js/Next.js ainsi qu'HTML/CSS/JS, comme vous pouvez
+                      le constater avec cette landing page. Je peux également
+                      utiliser des outils low-code (Shopify, WordPress) et
+                      no-code (FlutterFlow pour les applications).
+                      <br />En plus de mes compétences en développement, que je
+                      continue d'affiner, je m'engage à devenir freelance d'ici
+                      octobre 2024 et à acquérir les connaissances nécessaires
+                      pour attirer et fidéliser des clients dans le domaine de
+                      l'IT. C'est une capacité supplémentaire que je pourrai
+                      mettre à profit au sein de votre entreprise.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      02. Nous n'avons peut-être pas le même cadre pour te
+                      former qu'à Paris, en Belgique ou à Hub2 à la Réunion
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      C'est pas un problème. J'ai toujours été autodidacte. J'ai
+                      d'ailleurs suivi des formations JavaScript/TypeScript -
+                      React - NextJs de Melvyn Malherbe, ainsi que plein
+                      d'autres formations. D'ici Octobre 2024, je peux me former
+                      aussi sur ce dont vous avez besoin pour gagner du temps.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      03. Toutes ces qualités, juste pour un alternant ? Tu vas
+                      forcément nous demander un salaire et des avantages
+                      d'expatrié vazaha.
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      Pas du tout, il y a actuellement 3 entreprises qui me
+                      veulent. Celle où je suis déjà me garde pour l'alternance.
+                      Je suis mieux payé que le salaire minimum pour les
+                      alternants, et ils m'augmentent tous les 6 mois. Ils
+                      veulent ensuite me proposer un CDI à probablement 35k à
+                      42k selon mon niveau de réalisation. <br />Ensuite, il y a
+                      une entreprise en Belgique et une à La Réunion (Hub2 où
+                      travaille Herilaza). Malgré tout cela, même avec le
+                      salaire minimum et aucun avantage, je choisis Numer &
+                      Madagascar.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      04.Tu ne réussiras pas à vivre à Madagascar. Les expatriés
+                      avec des salaires de 4000 euros et plus se plaignent tout
+                      le temps.
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      Malgré le fait que je sois parisien, j'ai déjà la tête au
+                      pays, il ne manque plus qu'à <b>miteny malagasy</b>. De
+                      plus, j'ai fait 2 mois de bénévolat dans des conditions
+                      plutôt difficiles par rapport à ma façon de vivre en
+                      France. Je ne me suis jamais plaint, la seule fois c'était
+                      peut-être dans les embouteillages de Tana, mais les Gasy
+                      eux-mêmes se plaignent.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="faq-card">
+                  <button class="card-action" data-accordion-action>
+                    <h3 class="h3 card-title">
+                      05. Nous ne sommes pas encore sûrs. Comment pourrais-tu
+                      nous convaincre, Tony?
+                    </h3>
+
+                    <div class="action-icon">
+                      <ion-icon
+                        name="add-outline"
+                        aria-hidden="true"
+                        class="open"
+                      ></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        aria-hidden="true"
+                        class="close"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <div class="card-content">
+                    <p>
+                      J'ai conscience de mon niveau technique débutant, mais je
+                      sais aussi que je code tous les jours, vraiment tous les
+                      jours. Il y a 6 mois qui nous séparent d'octobre 2024, je
+                      serai un autre développeur d'ici là, bien plus expérimenté
+                      qu'actuellement, et je suis content d'avoir le temps de
+                      vous le prouver.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">Numer</a>
+
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Entrez votre email"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="form-btn">
+                <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Nos Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Ingénierie Logicielle</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Intelligence artificielle</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Cloud & Cybersécurité</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Me contacter</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">YouTube</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">LinkedIn</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link address">
+                Antananarivo, Madagascar
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+26145468948" class="contact-link">+26145468948</a>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:info@hoolix.com" class="contact-link"
+                >info@numer.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 Numer | Tout droits reservés par
+            <a
+              href="https://www.youtube.com/@MadagasCode/videos"
+              class="copyright-link"
+              >MadagasCode</a
+            >
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link"
+                >politique de confidentialité</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link"
+                >Conditions d'utilisation</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
