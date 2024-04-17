@@ -1058,7 +1058,10 @@ body {
   .hero .btn-group {
     justify-content: flex-start;
   }
-
+  .modal-content iframe {
+    width: 900px; /* Ajustez la largeur pour les petits écrans */
+    height: 600px; /* Ajustez la hauteur pour les petits écrans */
+  }
   /**
    * SERVICE
    */
